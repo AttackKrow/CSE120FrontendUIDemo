@@ -1,17 +1,21 @@
-import { useState } from 'react'
 import './App.css'
-import {InfoCard} from '@/components/dashboard/InfoCard'
+import { InfoCard } from "@/components/dashboard/InfoCard";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/dark-mode-toggle";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div>
-        <InfoCard></InfoCard>
-    </div>
-    
-        
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <div className="relative min-h-screen bg-background text-foreground p-6">
+        {/* Top right light/dark mode switcher*/}
+        <div className="fixed top-4 right-4 z-50">
+          <ModeToggle />
+        </div>
+
+        <main>
+          <InfoCard />
+        </main>
+      </div>
+    </ThemeProvider>
   )
 }
-
-export default App
