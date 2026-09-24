@@ -2,9 +2,7 @@
 
 ## Prerequisites
 Install [Nodejs](https://nodejs.org/en/download)
-
-## Setup
-Navigate to 120ProjDemo directory and install Vite
+Then, navigate to the 120ProjDemo directory and install Vite
 
 ```npm install vite```
 
