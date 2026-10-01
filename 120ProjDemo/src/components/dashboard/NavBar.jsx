@@ -8,10 +8,7 @@ export function NavBar({ activeTab, onTabChange }) {
         <span className="font-bold text-lg">DBBench</span>
         <Tabs value={activeTab} onValueChange={onTabChange}>
           <TabsList variant="line">
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="reports">Reports</TabsTrigger>
-            <TabsTrigger value="settings">Analytics</TabsTrigger>
-            <TabsTrigger value="benchmarks">Benchmarks</TabsTrigger>
+            <TabsTrigger value="Main View">Main View</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
