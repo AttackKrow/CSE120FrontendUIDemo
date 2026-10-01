@@ -1,7 +1,7 @@
 Frontend:
     React
     Vite
-    react-plotly.js - NYI
+    react-plotly.js
     TailwindCSS
     shadcn/ui
 
